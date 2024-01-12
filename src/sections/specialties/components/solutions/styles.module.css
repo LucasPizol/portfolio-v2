@@ -1,0 +1,130 @@
+.main {
+  background: linear-gradient(180deg, #0e0e0e 3%, #000 57.51%);
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.rightDiv,
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.rightDiv {
+  gap: 100px;
+  flex: 1;
+  width: 100%;
+}
+
+.title,
+.titleWithBackground {
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+}
+
+.titleWithBackground {
+  background: linear-gradient(90deg, #36bf3c 0%, #139819 50%, #004603 100%);
+  padding: 0 16px;
+}
+
+.imageNotebook {
+  max-width: 700px;
+  width: 100%;
+}
+
+.comment {
+  width: 100%;
+  max-width: 360px;
+}
+
+@media (max-width: 1200px) {
+  .imageNotebook {
+    max-width: 500px;
+  }
+
+  .title,
+  .titleWithBackground {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 993px) {
+  .article {
+    gap: 8px;
+  }
+
+  .imageNotebook {
+    max-width: 450px;
+  }
+
+  .title,
+  .titleWithBackground {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .article {
+    flex-direction: column-reverse;
+  }
+
+  .rightDiv {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imageNotebook {
+    max-width: 450px;
+  }
+
+  .title,
+  .titleWithBackground {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 360px) {
+  .article {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .rightDiv {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imageNotebook {
+    max-width: 450px;
+  }
+
+  .title,
+  .titleWithBackground {
+    font-size: 8vw;
+  }
+}

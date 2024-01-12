@@ -1,0 +1,13 @@
+.technology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
+  transition: 0.23s;
+}
+
+.technology p {
+  margin: 0;
+  text-align: center;
+}

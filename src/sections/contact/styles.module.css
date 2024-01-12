@@ -1,0 +1,137 @@
+.main {
+  padding: 80px 0;
+  background-color: rgb(32, 32, 32);
+}
+
+.main h2 {
+  color: #fff;
+  font-weight: 700;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  flex: 2;
+}
+.formGroup {
+  width: 100%;
+}
+
+.formGroup label {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.formInput {
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: 0.3s;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  padding: 8px;
+  color: #fff;
+  &:focus {
+    outline: 0;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 0px 5px 0px var(--primary-color);
+  }
+  &:not(:empty) {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+}
+
+.formInputFilled {
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: 0.3s;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  color: #fff;
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  &:focus {
+    outline: 0;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 0px 5px 0px var(--primary-color);
+  }
+}
+
+.formButton {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 0px 5px 0px var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: var(--primary-color);
+  transition: 0.3s;
+  font-weight: bold;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+}
+
+.formButtonDisabled {
+  background-color: transparent;
+  border: 1px solid #aaa;
+  box-shadow: 0px 0px 5px 0px #aaa;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #aaa;
+  transition: 0.3s;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input:-webkit-autofill {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #fff !important;
+  color: #fff;
+}
+.contact {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  color: #fff;
+}
+
+@media(max-width: 576px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+  }
+  .form {
+    align-items: center;
+  }
+  .container h2 {
+    height: 100%;
+  }
+}

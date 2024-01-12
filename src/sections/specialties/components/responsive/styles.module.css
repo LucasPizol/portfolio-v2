@@ -1,0 +1,148 @@
+.main {
+  background: linear-gradient(180deg, #0e0e0e 3%, #000 57.51%);
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.leftDiv {
+  max-width: 50%;
+}
+
+.leftDiv,
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.leftDiv {
+  gap: 50px;
+  width: 100%;
+}
+
+.title,
+.titleWithBackground {
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+}
+
+.titleWithBackground {
+  background: linear-gradient(90deg, #36bf3c 0%, #139819 50%, #004603 100%);
+  padding: 0 16px;
+}
+.leftDiv p {
+  color: white;
+  font-size: 16px;
+}
+.imageCellphone {
+  max-width: 420px;
+  width: 100%;
+}
+
+.comment {
+  width: 100%;
+  max-width: 360px;
+}
+
+@media (max-width: 1200px) {
+  .imageCellphone {
+    max-width: 350px;
+  }
+
+  .title,
+  .titleWithBackground {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 993px) {
+  .article {
+    gap: 8px;
+  }
+
+  .imageCellphone {
+    max-width: 300px;
+  }
+
+  .title,
+  .titleWithBackground {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .article {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .leftDiv {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .imageCellphone {
+    max-width: 250px;
+  }
+
+  .title,
+  .titleWithBackground {
+    font-size: 28px;
+  }
+
+  .info p {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .article {
+    align-items: center;
+  }
+
+  .leftDiv {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .leftDiv p {
+    font-size: 4.4vw;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imageCellphone {
+    max-width: 200px;
+  }
+
+  .title,
+  .titleWithBackground {
+    font-size: 8vw;
+  }
+}

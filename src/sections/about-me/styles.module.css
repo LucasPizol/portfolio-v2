@@ -1,0 +1,89 @@
+.main {
+  padding: 100px 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.container img {
+  max-width: 530px;
+}
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.infoDiv p {
+  color: rgb(219, 219, 219);
+  font-size: 18px;
+}
+.title,
+.titleWithBackground {
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+}
+.titleWithBackground {
+  background: linear-gradient(90deg, #36bf3c 0%, #139819 50%, #004603 100%);
+  padding: 0 16px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .title,
+  .titleWithBackground {
+    font-size: 36px;
+  }
+
+  .container img {
+    max-width: 460px;
+  }
+}
+@media (max-width: 993px) {
+  .title,
+  .titleWithBackground {
+    font-size: 28px;
+  }
+  .container {
+    gap: 15px;
+  }
+  .container img {
+    max-width: 300px;
+  }
+  .infoDiv p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .title,
+  .titleWithBackground {
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+  .container img {
+    max-width: none;
+    width: 90%;
+  }
+  .infoDiv {
+    align-items: center;
+  }
+  .infoDiv p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .title,
+  .titleWithBackground {
+    font-size: 8vw;
+  }
+  .infoDiv p {
+    font-size: 4.3vw;
+  }
+}
