@@ -33,13 +33,31 @@ export const Technologies = () => {
     <main className={styles.main} id="technologies">
       <Container>
         <div className={styles.info}>
-          <h1 className={styles.title}>USANDO AS PRINCIPAIS</h1>
-          <h1 className={styles.titleWithBackground}>TECNOLOGIAS</h1>
-          <h1 className={styles.title}>DO MERCADO</h1>
+          <h1 className={styles.title} data-aos="fade-up" data-aos-offset="700">
+            USANDO AS PRINCIPAIS
+          </h1>
+          <h1
+            className={styles.titleWithBackground}
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-offset="700"
+          >
+            TECNOLOGIAS
+          </h1>
+          <h1
+            className={styles.title}
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-offset="700"
+          >
+            DO MERCADO
+          </h1>
         </div>
         <div className={styles.techList}>
           {technologies.map((technology, index) => (
-            <Technology Technology={technology} key={index} />
+            <article data-aos="fade-up" data-aos-delay={String(index *100)} data-aos-offset="700">
+              <Technology Technology={technology} key={index} />
+            </article>
           ))}
         </div>
       </Container>

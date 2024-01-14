@@ -7,7 +7,7 @@ export const Specialties = () => {
   return (
     <main className={styles.main} id="specialties">
       <Container>
-        <Solutions />
+        <Solutions/>
         <Responsive />
       </Container>
     </main>
