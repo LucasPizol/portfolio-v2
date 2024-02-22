@@ -33,14 +33,14 @@ export const Technologies = () => {
     <main className={styles.main} id="technologies">
       <Container>
         <div className={styles.info}>
-          <h1 className={styles.title} data-aos="fade-up" data-aos-offset="700">
+          <h1 className={styles.title} data-aos="fade-up" data-aos-offset="400">
             USANDO AS PRINCIPAIS
           </h1>
           <h1
             className={styles.titleWithBackground}
             data-aos="fade-up"
             data-aos-delay="100"
-            data-aos-offset="700"
+            data-aos-offset="400"
           >
             TECNOLOGIAS
           </h1>
@@ -48,14 +48,18 @@ export const Technologies = () => {
             className={styles.title}
             data-aos="fade-up"
             data-aos-delay="200"
-            data-aos-offset="700"
+            data-aos-offset="400"
           >
             DO MERCADO
           </h1>
         </div>
         <div className={styles.techList}>
           {technologies.map((technology, index) => (
-            <article data-aos="fade-up" data-aos-delay={String(index *100)} data-aos-offset="700">
+            <article
+              data-aos="fade-up"
+              data-aos-delay={String(index * 100)}
+              data-aos-offset="400"
+            >
               <Technology Technology={technology} key={index} />
             </article>
           ))}

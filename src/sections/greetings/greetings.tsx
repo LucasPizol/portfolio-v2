@@ -17,9 +17,19 @@ export const Greetings = () => {
       </div>
 
       <Container className={styles.mainContent}>
-        <div data-aos="fade-left" data-aos-duration="300" className={styles.userInfo}>
-          <h2 data-aos="fade-up" data-aos-duration="300">Prazer, me chamo</h2>
-          <h1 data-aos="fade-up" className={styles.userName} data-aos-delay="300">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="300"
+          className={styles.userInfo}
+        >
+          <h2 data-aos="fade-up" data-aos-duration="300">
+            Prazer, me chamo
+          </h2>
+          <h1
+            data-aos="fade-up"
+            className={styles.userName}
+            data-aos-delay="300"
+          >
             {"<Lucas Pizol />"}
           </h1>
           <div className={styles.buttons}>
@@ -30,7 +40,8 @@ export const Greetings = () => {
             <a
               href="/Currículo_Lucas Pizol Ferreira_Desenvolvedor.pdf"
               download
-              data-aos="fade-up" data-aos-delay="500"
+              data-aos="fade-up"
+              data-aos-delay="500"
             >
               <MdOutlineCloudDownload size={18} />
               Baixar CV

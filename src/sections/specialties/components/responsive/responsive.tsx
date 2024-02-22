@@ -5,7 +5,7 @@ import cellphone from "/cellphone_mockup.png";
 export const Responsive = () => {
   return (
     <article className={styles.article}>
-      <div className={styles.leftDiv} data-aos="fade-right" data-aos-offset="650">
+      <div className={styles.leftDiv} data-aos="fade-up">
         <div className={styles.info}>
           <h1 className={styles.title}>DESIGN DE TELAS</h1>
           <h1 className={styles.titleWithBackground}>RESPONSIVAS</h1>
@@ -17,7 +17,11 @@ export const Responsive = () => {
         </p>
         <img className={styles.comment} src={comment} />
       </div>
-      <img className={styles.imageCellphone} src={cellphone} data-aos="fade-left" data-aos-offset="650"/>
+      <img
+        className={styles.imageCellphone}
+        src={cellphone}
+        data-aos="fade-up"
+      />
     </article>
   );
 };
